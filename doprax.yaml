@@ -5,6 +5,7 @@ volumes:
 envs:
   - DB_PASS: PASSWORD
   - DB_NAME: mydb
+  - DB_HOST: mysql
 
 services:
   - mysql:
