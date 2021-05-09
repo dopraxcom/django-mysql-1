@@ -25,7 +25,7 @@ SECRET_KEY = 'q9^%73hzon-&z4@uq&%r^r9x77$p!^(e!@(u6w%k1(!s8^x+^e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.doprax.com']
+ALLOWED_HOSTS = ['.doprax.com','127.0.0.1','localhost']
 
 
 # Application definition
