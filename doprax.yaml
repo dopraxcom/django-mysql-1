@@ -15,11 +15,11 @@ services:
         - name: mysql_vol
           mount: /var/lib/mysql/
       envs:
-        - MYSQL_ROOT_PASSWORD: random
+        - MYSQL_ROOT_PASSWORD: random_1
           type: password
         - MYSQL_DATABASE: mydb
         - MYSQL_USER: dbuser01
-        - MYSQL_PASSWORD: random_1
+        - MYSQL_PASSWORD: random
           type: password
 
   
