@@ -4,6 +4,7 @@ volumes:
     mount: /app_data/static/
 envs:
   - DB_PASS: random_1
+    type: password
   - DB_NAME: mydb
   - DB_HOST: mysql
 
@@ -15,7 +16,10 @@ services:
           mount: /var/lib/mysql/
       envs:
         - MYSQL_ROOT_PASSWORD: random
+          type: password
         - MYSQL_DATABASE: mydb
         - MYSQL_USER: dbuser01
         - MYSQL_PASSWORD: random_1
+          type: password
+
   
