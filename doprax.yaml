@@ -3,7 +3,7 @@ volumes:
   - name:  static
     mount: /app_data/static/
 envs:
-  - DB_PASS: PASSWORD
+  - DB_PASS: random_1
   - DB_NAME: mydb
   - DB_HOST: mysql
 
@@ -14,8 +14,8 @@ services:
         - name: mysql_vol
           mount: /var/lib/mysql/
       envs:
-        - MYSQL_ROOT_PASSWORD: PASSWORD
+        - MYSQL_ROOT_PASSWORD: random
         - MYSQL_DATABASE: mydb
         - MYSQL_USER: dbuser01
-        - MYSQL_PASSWORD: PASSWORD
+        - MYSQL_PASSWORD: random_1
   
