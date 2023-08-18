@@ -1,12 +1,12 @@
-
-volumes:
-  - name:  static
-    mount: /app_data/static/
-envs:
-  - DB_PASS: random_1
-    type: password
-  - DB_NAME: mydb
-  - DB_HOST: mysql
+main:
+  volumes:
+    - name:  static
+      mount: /app_data/static/
+  envs:
+    - DB_PASS: random_1
+      type: password
+    - DB_NAME: mydb
+    - DB_HOST: mysql
 
 services:
   - mysql:
